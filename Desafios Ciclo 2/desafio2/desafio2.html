@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="/Desafios/JS/desafio2/style.css">
+    <script src="/Desafios/JS/desafio2/scrypt.js"></script>
+    
+      
+      
+</head>
+ 
+
+   
+<body >
+    <header >
+       <div  id="titulo" class="flex">
+           <h1>ME ACHA!</h1>
+           
+      </div>
+      <div class="flex">
+          <h4 id="titulo2"> ENCONTRE UM ENDEREÇO PELO NÚMERO DO CEP</h4>
+    </div>
+      <div class="flex" id="icone">
+            <span class="material-icons flex">
+          travel_explore
+          </span>
+      </div>
+      
+    </header>
+    <main  >
+        <div class="box inputbox flex" id="buscador">
+           <form id="pesquisa" action="https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/">
+               <fieldset id="fieldset">
+            <div class="inputbox">
+                    <label class="labelinput" url=" id="cep" for="Cep">Cep</label>
+                    <br>
+                    <input type="text" name="cep" id="Cep" class="user" required>
+                    </div>
+                    <br>
+                <div class="inputbox ">
+                    <label class="labelinput" for="Rua">Rua</label>
+                    <br>
+                    
+                    <input type="text" name="logradouro" id="logradouro" class="user" required>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label class="labelinput" for="Bairro">Bairro</label>
+                    <br>
+                    <input type="text" name="Bairro" id="Bairro" class="user" required>
+                    </div>
+                    <br>
+                <div class="inputbox">
+                    <label class="labelinput" for="Cidade">Cidade</label>
+                    <br>
+                    <input type="text" name="Cidade" id="Cidade" class="user" required>
+                    </div>
+                    <br>
+                <div class="inputbox">
+                    <label class="labelinput" for="Estado">Estado</label>
+                    <br>
+                    <input type="text" name="Estado" id="Estado" class="user" required>
+                </div>
+                <div><br>
+                    <input type="button" name="botão" id="botão" class="user" value="Buscar" required>
+                    
+            </div><br>
+        </fieldset>
+        </form>
+            
+    </div>
+       
+        
+    </main>
+    
+</body>
+</html>
